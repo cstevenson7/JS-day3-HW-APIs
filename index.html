@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
+
+
+<title>JS Day3 HW</title>
+<script src="js/main.js" defer></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Formula 1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Driver's Bios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--input and submit button-->
+ 
+        <form name="f1RacerForm" id="f1RacerForm">
+           
+            <input type="text" name="season" id="season" placeholder = Season>               
+            <input type="text" name="round" id="round" placeholder = Round>
+            <button type="button" onClick="getJson()">Get Standings</button>
+        </form> 
+
+  
+
+
+      
+      <div class="container">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Position</th>
+                <th scope="col">Name</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Sponsor</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="position"></td>
+                <td id="familyName"></td>
+                <td id="nationality"></td>
+                <td id="sponsor"></td>
+                <td id="points"></td>
+            </tbody>
+          </table>
+      </div>
+    
+
+      <!-- HTML TABLE OF TOP & DRIVERS-->
+      <div class="container2">
+        <table id="#f1table">
+          <tr><th>Position</th><th>Name</th><th>Nationality</th><th>Sponsor</th><th>Points</th></tr>
+        </table>
+      </div>
+</body>
+</html>

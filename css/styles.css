@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(to right, red , yellow);
+}
+
+form{
+    margin-top: 25vh;
+    margin-left: 30vw;
+
+}
+
+button{
+    background-color: goldenrod;
+    border: 2px solid dimgray;
+    border-radius: 25px;
+}
+
+.container{
+    margin-top: 10vh;    
+}
+
+
+.container2{
+    margin-left:27vw;
+    margin-right:30vw;
+    background-color:#343A40 ;  
+}
+
+th{
+ 
+    padding:15px 20px 10px 20px;
+    font-size: 20px;
+    color: white;  
+}
+
+td{
+    padding:0 20px 0 20px;
+    color: white;    
+}
