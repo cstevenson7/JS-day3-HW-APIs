@@ -54,9 +54,13 @@ function getJson()
                 // All other cells are added to the bottom fot the table (-1) - NAME
                 let newCell2 = newRow.insertCell(-1);
                 // Append a text node to the cell
-                let tbl_lastname = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.familyName          
-                let newText2 = document.createTextNode( tbl_lastname);
+                let tbl_givenName = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.givenName
+                let tbl_lastname = rawData.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.familyName 
+                let fullName =  tbl_givenName + " " + tbl_lastname           
+                let newText2 = document.createTextNode( fullName);
                 newCell2.appendChild(newText2);
+
+
 
                 // All other cells are added to the bottom fot the table (-1) - NATIONALITY
                 let newCell3 = newRow.insertCell(-1);

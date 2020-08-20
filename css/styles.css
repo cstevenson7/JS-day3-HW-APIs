@@ -20,14 +20,13 @@ button{
 
 
 .container2{
-    margin-left:27vw;
+    margin-left:20vw;
     margin-right:30vw;
     background-color:#343A40 ;  
 }
 
-th{
- 
-    padding:15px 20px 10px 20px;
+th{ 
+    padding:15px 25px 10px 25px;
     font-size: 20px;
     color: white;  
 }
